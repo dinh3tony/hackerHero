@@ -1,0 +1,249 @@
+#wrapper .header_wrapper {
+  background-color: transparent;
+}
+#wrapper .header_wrapper > div {
+  background-color: #9F2728;
+  color: #E8F9FF;
+  padding: 20px 80px;
+  position: relative;
+}
+#wrapper .header_wrapper > div > p {
+  display: inline-block;
+  font: 14px/18px Gotham-Rounded-Book;
+  vertical-align: middle;
+  margin: 0px;
+}
+#wrapper .header_wrapper > div > p.page_number {
+  right: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+#wrapper .header_wrapper > div.user_stats {
+  background-color: #373737;
+  padding: 20px 0px 0px;
+}
+#wrapper .header_wrapper > div.user_stats > p {
+  background-color: #FFF;
+  color: #646464;
+  display: block;
+  margin: 20px 0px 0px;
+  padding: 30px 80px;
+}
+#wrapper .header_wrapper > div.user_stats > div {
+  display: inline-block;
+  padding: 0px 80px 0px 0px;
+  vertical-align: bottom;
+  width: 50%;
+}
+#wrapper .header_wrapper > div.user_stats > div.left_wrapper {
+  padding: 0px 0px 0px 80px;
+}
+#wrapper .header_wrapper > div.user_stats > div.left_wrapper h4 {
+  font: 30px/34px Gotham-Rounded-Bold;
+  margin: 0px 0px 7px;
+}
+#wrapper .header_wrapper > div.user_stats > div.left_wrapper p {
+  font: 14px/18px Gotham-Rounded-Book;
+  margin: 0px;
+}
+#wrapper .header_wrapper > div.user_stats > div > ul {
+  display: block;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  width: 100%;
+}
+#wrapper .header_wrapper > div.user_stats > div > ul li {
+  border: 1px solid #FFFFFF;
+  border-left: 0px;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+  width: 110px;
+}
+#wrapper .header_wrapper > div.user_stats > div > ul li span {
+  color: #6C7174;
+  font: 11px/17px Gotham-Rounded-Book;
+}
+#wrapper .header_wrapper > div.user_stats > div > ul li span.diagnostic_test_name {
+  color: #D5CB83;
+}
+#wrapper .header_wrapper > div.user_stats > div > ul li p {
+  color: #FEFEFE;
+  font: 54px/48px Gotham-Rounded-Bold;
+  margin: 4px 0px 0px;
+}
+#wrapper .header_wrapper > div.user_stats > div > ul li:first-child {
+  border-left: 1px solid #FFFFFF;
+}
+#wrapper .diagnostic_test_wrapper {
+  background-color: #F2F2F2;
+  padding: 40px 0px;
+}
+#wrapper .diagnostic_test_wrapper ul.list-unstyled {
+  pointer-events: none;
+  max-width: 1010px;
+  margin: 0px auto;
+}
+#wrapper .diagnostic_test_wrapper ul.list-unstyled li {
+  display: inline-block;
+  vertical-align: top;
+  width: 450px;
+  margin: 0px 20px;
+  height: 450px;
+}
+#wrapper .diagnostic_test_wrapper ul.list-unstyled li h5 {
+  font: 16px/18px Gotham-Rounded-Bold, tahoma, verdana, arial, sans-serif;
+}
+#wrapper .diagnostic_test_wrapper ul.list-unstyled li .percentile_score {
+  position: absolute;
+  display: inline-block;
+  vertical-align: top;
+  background: #E8E8E8;
+  color: #76E84A;
+  padding: 32px 21px 15px;
+  font-size: 66px;
+  z-index: 99;
+  margin: 82px 27px;
+}
+#wrapper .diagnostic_test_wrapper ul.list-unstyled li .percentile_score:after {
+  content: 'percentile';
+  display: block;
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+  font: 14px/16px Gotham-Rounded-Medium, tahoma, verdana, arial, sans-serif;
+}
+#wrapper .invite_candidates {
+  background-color: #FFFFFF;
+  padding: 40px 80px;
+}
+#wrapper .invite_candidates > h6 {
+  font: 14px/18px Gotham-Rounded-Bold;
+  margin: 0px 0px 13px;
+}
+#wrapper .invite_candidates ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#wrapper .invite_candidates ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+#wrapper .invite_candidates > ul li {
+  background-color: #F2F2F2;
+  padding: 13px 2px;
+  text-align: center;
+  width: 105px;
+}
+#wrapper .invite_candidates > ul li .icon {
+  display: block;
+  margin: 0px auto 8px;
+  width: 25px;
+}
+#wrapper .invite_candidates > ul li > p {
+  color: #373737;
+  font: 10px/14px Gotham-Rounded-Bold;
+  margin: 0px 0px 4px;
+}
+#wrapper .invite_candidates > ul li span {
+  font: 8px/14px Gotham-Rounded-Book;
+}
+#wrapper .invite_candidates > ul li:nth-child(3) {
+  margin: 0px 40px 0px 0px;
+}
+#wrapper .footer_wrapper > div {
+  color: #FFF;
+  padding: 30px 80px;
+}
+#wrapper .footer_wrapper > div > h3,
+#wrapper .footer_wrapper > div > a {
+  display: inline-block;
+  vertical-align: top;
+}
+#wrapper .footer_wrapper > div > h3 {
+  font: 24px/28px Gotham-Rounded-Bold;
+  margin: 0px 20px 0px 0px;
+}
+#wrapper .footer_wrapper > div a {
+  background-color: transparent;
+  border: 1px solid #FFF;
+  color: #FFF;
+  font: 13px/17px Gotham-Rounded-Book;
+  padding: 7px 30px;
+  text-decoration: none !important;
+  margin: 0px;
+  width: auto;
+}
+#wrapper .footer_wrapper > div a:hover {
+  opacity: .7;
+}
+#wrapper .footer_wrapper > div a.green_cta {
+  background-color: #6BBB24;
+  border: 1px solid #6BBB24;
+  margin: 0px 5px 0px 0px;
+}
+#wrapper .footer_wrapper > div.next_step {
+  background-color: #373737;
+}
+#wrapper .footer_wrapper > div.foot_note {
+  background-color: #272727;
+  position: relative;
+}
+#wrapper .footer_wrapper > div.foot_note > img,
+#wrapper .footer_wrapper > div.foot_note > p {
+  display: inline-block;
+  margin: 0px;
+  vertical-align: middle;
+  width: auto;
+}
+#wrapper .footer_wrapper > div.foot_note > p {
+  font: 13px/16px Gotham-Rounded-Book;
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.highcharts-tooltip {
+  background: url('../../../assets/images/highcharts/table_toolttip_arrow.png');
+  display: block;
+  height: 150px;
+  width: 149px;
+  background-repeat: no-repeat;
+}
+.highcharts-tooltip > span {
+  padding: 2px 4px;
+  font-size: 12px;
+  position: absolute;
+  white-space: nowrap;
+  cursor: default;
+  margin-left: 0px;
+  margin-top: 0px;
+  left: 160px !important;
+  top: -19px !important;
+  background: #9F2727;
+  color: #fff !important;
+  border: none;
+  box-shadow: none;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.highcharts-tooltip > span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -23px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border-top: 22px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 23px solid #9f2727;
+}

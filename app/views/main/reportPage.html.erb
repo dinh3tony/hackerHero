@@ -1,0 +1,308 @@
+     <title>HackerHero - Game Summary</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/assets/global.css">
+    <link rel="stylesheet" href="/assets/header.css">
+    <link rel="stylesheet" href="/assets/tables.css">
+    <link rel="stylesheet" href="/assets/gamesummary.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.usermenu').click(function () {
+                if ($('.menu').css('display') == 'none') {
+                    $('.menu').css('display', 'inline-block');
+                } else if ($('.menu').css('display') == 'block') {
+                    $('.menu').css('display', 'none');
+                }
+            });
+
+        });
+    </script>
+    <div class="container">
+        <div class="main header">
+            <div class="logo">
+                <img class="logo-img" src="/assets/hrz-logo.png">
+                <button onclick="location.href='generalPage.html'" class="nav-active">Games</button>
+                <button onclick="location.href='dashboard.html'">Players <span id="nav-ply-num">1,234</span></button>
+                <button>Competitions</button>
+                <button>Companies</button>
+            </div>
+            <div class="usermenu">
+                <p>Demy</p>
+                <i class="fas fa-angle-down"></i>
+                <img class="user-img-menu" src="/assets/user.png">
+            </div>
+            <div class="menu">
+                <div class="menu-img-holder">
+                    <img class="menu-usr-pic" src="/assets/user.png">
+                </div>
+                <div class="menu-usrnme-holder">
+                    <p id="menu-usrnme">Demy Balanza</p>
+                    <p>dbalanza@village88.com</p>
+                </div>
+                <div class="menu-items">
+                    <a href="#">220 Followers</a>
+                    <a href="#">220 Friends (6 requests)</a>
+                    <hr>
+                    <a href="#">Update Profile</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="main topsummary">
+            <div class="topsummary-left">
+                <div class="topsummary-title">
+                    <h1>Your Game Summary</h1>
+                </div>
+                <div class="topsummary-pntslvl">
+                    <div class="points">
+                        <span>Total points earned</span>
+                        <h1>50</h1>
+                        <p>points</p>
+                    </div>
+                    <div class="level">
+                        <span>Highest level challenge solved</span>
+                        <h1>Level 8</h1>
+                        <p>(Maximum level for this area is 12)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="topsummary-right">
+                <h1>Congrats! You have leveled up from Level 0 to Level 8 in this game!!!</h1>
+                <button class="fb-flw-btn"><img class="fb-btn-logo" src="/assets/facebook.png">Follow Us on Facebook</button>
+                <button class="tw-flw-btn"><img class="tw-btn-logo" src="/assets/twitter.png">Follow Us on Twitter</button>
+            </div>
+        </div>
+
+        <div class="main gamebreakdown">
+            <div class="boss">
+                <h2>Bosses Defeated</h2>
+                <div class="defeated">
+                    <img class="bosses-df" src="/assets/lucy.png">
+                    <img class="bosses-df" src="/assets/bluelito.png">
+                    <img class="bosses-df" src="/assets/dash.png">
+                </div>
+                <div class="not-defeated">
+                    <img class="do-better" src="/assets/question_bug.png">
+                    <i class="fas fa-chevron-right fablu"></i>
+                    <img class="do-better" src="/assets/question_bug.png">
+                    <i class="fas fa-chevron-right fablu"></i>
+                    <img class="do-better" src="/assets/question_bug.png">
+                    <i class="fas fa-chevron-right fablu"></i>
+                    <img class="do-better" src="/assets/question_bug.png">
+                </div>
+                <div class="again">
+                    <h2>You can do better!</h2>
+                    <button class="play-again">Play again</button>
+                    <button class="invite">Invite friends to play again</button>
+                </div>
+            </div>
+            <div class="points-bkdwn">
+                <h2>Points Breakdown</h2>
+                <table class="hh-tbl" id="pnts-bkdwn" CELLSPACING=0>
+                    <thead>
+                        <tr>
+                            <th>Level</th>
+                            <th>Earned Points</th>
+                            <th>Challenges Attempted</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>0/1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2/2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>3/3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>4/4</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>3/5</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>5/10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>10/20</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>20/20</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>35/50</td>
+                            <td>50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="main playerstats">
+            <div class="allies">
+                <h2>Your Allies</h2>
+                <table id="allies-tbl" class="hh-tbl" CELLSPACING=0>
+                    <thead>
+                        <tr>
+                            <th>
+                                <!--blank for img column-->
+                            </th>
+                            <th id="th-frnd">Friend</th>
+                            <th>Earned Points</th>
+                            <th>High Level Solved w/ Full Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tbl-img"><img class="user-img urs-tbl" src="/assets/user.png"></td>
+                            <td class="tbl-usr-name">Michael Choi</td>
+                            <td>100</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="tbl-img"><img class="user-img urs-tbl" src="/assets/user.png"></td>
+                            <td class="tbl-usr-name">Jhaver Gurtiza</td>
+                            <td>100</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="tbl-img"><img class="user-img urs-tbl" src="/assets/user.png"></td>
+                            <td class="tbl-usr-name">Demy Balanza</td>
+                            <td>100</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td class="tbl-img"><img class="user-img urs-tbl" src="/assets/user.png"></td>
+                            <td class="tbl-usr-name">John Flores</td>
+                            <td>100</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td class="tbl-img"><img class="user-img urs-tbl" src="/assets/user.png"></td>
+                            <td class="tbl-usr-name">Jerwin Fernandez</td>
+                            <td>100</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td class="tbl-img"><img class="user-img urs-tbl" src="/assets/user.png"></td>
+                            <td class="tbl-usr-name">Ryan Guerra</td>
+                            <td>100</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td class="tbl-img"><img class="user-img urs-tbl" src="/assets/user.png"></td>
+                            <td class="tbl-usr-name">John Supsupin</td>
+                            <td>100</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td class="tbl-img"><img class="user-img urs-tbl" src="/assets/user.png"></td>
+                            <td class="tbl-usr-name">Stan Nudo</td>
+                            <td>100</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td class="tbl-img"><img class="user-img urs-tbl" src="/assets/user.png"></td>
+                            <td class="tbl-usr-name">Kaye Aborot</td>
+                            <td>100</td>
+                            <td>50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="levels">
+                <h2>Your Levels</h2>
+                <table id="lvls-tbl" class="hh-tbl" CELLSPACING=0>
+                    <thead>
+                        <tr>
+                            <th>
+                                <!--Blank for badge column-->
+                            </th>
+                            <th class="lnd-name">Language</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="lnd-bdg-img"><img class="lnd-bdge" src="/assets/js.png"></td>
+                            <td class="lnd-name">General</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="lnd-bdg-img"><img class="lnd-bdge" src="/assets/js.png"></td>
+                            <td class="lnd-name">Data Structure</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td class="lnd-bdg-img"><img class="lnd-bdge" src="/assets/js.png"></td>
+                            <td class="lnd-name">Express</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td class="lnd-bdg-img"><img class="lnd-bdge" src="/assets/js.png"></td>
+                            <td class="lnd-name">Django</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td class="lnd-bdg-img"><img class="lnd-bdge" src="/assets/js.png"></td>
+                            <td class="lnd-name">Spring</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td class="lnd-bdg-img"><img class="lnd-bdge" src="/assets/js.png"></td>
+                            <td class="lnd-name">.NET MVC</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td class="lnd-bdg-img"><img class="lnd-bdge" src="/assets/js.png"></td>
+                            <td class="lnd-name">Front End</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td class="lnd-bdg-img"><img class="lnd-bdge" src="/assets/js.png"></td>
+                            <td class="lnd-name">Ruby</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td class="lnd-bdg-img"><img class="lnd-bdge" src="/assets/js.png"></td>
+                            <td class="lnd-name">iOS/Swift</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="main fbshare">
+            <img class="vid-share" src="/assets/thumb.png">
+            <div class="fbshare-text">
+                <h2>Game Highlight</h2>
+                <p>Check out how I solved this algorithm at HackerHero!</p>
+                <button class="fb-flw-btn"><img id="fb-share-img" class="fb-btn-logo" src="/assets/facebook.png">Share on Facebook</button>
+            </div>
+        </div>
+    </div>

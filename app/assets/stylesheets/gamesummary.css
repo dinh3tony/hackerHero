@@ -1,0 +1,253 @@
+div{
+    display:inline-block;
+}
+
+span{
+    color:#FCF0A1; 
+    font-size:15px;
+}
+
+/* BODY STYLES */
+
+.main{
+    display:block;
+}
+
+/* TOP SUMMARY STYLES */
+
+.topsummary-left{
+    background-color: #0B8CC1;
+    width:522.5px;
+    height:215px;
+    color:white;
+    padding-left:60px;
+    padding-top:35px;
+    margin-right:-20px;
+}
+
+.topsummary-right{
+    background-color: #0073A8;
+    width:547.5px;
+    height:175px;
+    color:white;
+    vertical-align: top;
+    padding-left: 50px;
+    padding-top: 75px;
+    padding-right: 115px;
+}
+
+.topsummary-right h1{
+    margin-bottom:40px;
+}
+
+.topsummary-title h1{
+    margin-bottom:25px;
+    font-size:26px;
+}
+
+.topsummary-pntslvl{
+    text-align: center;
+    width: 450px;
+    border: 1px white solid;
+    height:130px;
+}
+
+.points{
+    width:160px;
+    height:110px;
+    padding:10px 0px;
+    border-right:1px solid white;
+}
+
+.points p{
+    font-size:17px;
+}
+
+.points h1{
+    font-size:60px;
+}
+
+.level{
+    padding-top:10px;
+    width:280px;
+}
+
+.level h1{
+    font-size:40px;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.fb-flw-btn{
+    width:270px;
+    height: 40px;
+    margin-right:10px;
+    background-color:#46598F;
+    border:none;
+    font-size:16px;
+    color:white;
+    cursor:pointer;
+    padding-top:10px;
+
+}
+
+.tw-flw-btn{
+    width:250px;
+    height: 40px;
+    background-color:#76ADD9;
+    border:none;
+    font-size:16px;
+    color:white;
+    cursor:pointer;
+    padding-top:10px;
+}
+
+.fb-btn-logo{
+    height:40px;
+    margin-top:-10px;
+    margin-left:-24px;
+    margin-right:24px;
+}
+
+.tw-btn-logo{
+    height:40px;
+    margin-top:-10px;
+    margin-left:-24px;
+    margin-right:24px;
+}
+
+#fb-share-img{
+    margin-left:-55px;
+}
+
+.fb{
+    width:270px;
+    height: 40px;
+    margin-right:10px;
+}
+
+.twitter{
+    width:250px;
+    height: 40px;
+}
+
+/* BOSS SUMMARY */
+
+.gamebreakdown{
+    padding-left:70px;
+    padding-top:40px;
+    height:525px;
+}
+
+.boss{
+    width:40%;
+}
+
+.boss h2{
+    font-family: Gotham-Rounded-Bold;
+    font-size:20px;
+    font-weight:100;
+    margin-bottom:15px;
+}
+
+.bosses-df{
+    width:145px;
+    margin-bottom:20px;
+}
+
+.defeated{
+    display:block;
+}
+
+.not-defeated{
+    display:block;
+    margin-bottom:50px;
+}
+
+.do-better{
+    width:85px;
+}
+
+.fablu{
+    color:#0B81B9;
+    font-size:18px;
+    padding:40px 5px 0px 5px;
+}
+
+.again{
+    display:block;
+}
+
+.again h2{
+    font-size:22px;
+}
+
+.play-again{
+    height: 40px;
+    width: 185px;
+    color:white;
+    border:none;
+    background-color:#60B221;
+    font-size: 18px;
+    font-weight:800;
+}
+
+.invite{
+    height: 40px;
+    width: 280px;
+    color:#60B221;
+    border:2px solid #60B221;
+    background-color:white;
+    font-size: 18px;
+    font-weight:800;
+}
+
+.gamebreakdown{
+    background-color: #ECEBEB;
+}
+
+.lnd-bdge{
+    width:30px;
+}
+
+.points-bkdwn{
+    box-shadow: 1px 1px 12px grey ;
+    width:40%;
+    height:420px;
+    margin: 0px 65px;
+    padding-top:25px;
+    background-color:white;
+}
+
+.points-bkdwn h2{
+    margin-left:25px;
+    margin-bottom:15px;
+}
+
+
+
+/* FOOTER STYLES */
+
+.vid-share{
+    width:295;
+    margin-right:30px;
+}
+
+.fbshare-text h2{
+    margin-bottom: 15px;
+    padding-left:0px;
+}
+
+.fbshare-text p{
+    margin-bottom: 17px;
+    font-size: 18px;
+}
+
+.fbshare{
+    background-color: #272822;
+    color:white;
+    padding-left:70px;
+    padding-top:40px;
+    padding-bottom: 50px;
+    text-align: left;
+}

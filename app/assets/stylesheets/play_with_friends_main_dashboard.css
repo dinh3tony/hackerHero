@@ -1,0 +1,505 @@
+p,
+li {
+  font: 14px/20px Gotham-Rounded-Light;
+}
+div#main_navigation div#benchmark_navigation {
+  background-color: #272822;
+  height: 61px;
+  padding: 14px 55px;
+  width: 100%;
+}
+div#main_navigation div#benchmark_navigation div.group_nav_contents {
+  height: 100%;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_logo_container {
+  float: left;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div.group_logo {
+  display: inline-block;
+  vertical-align: top;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div.becnchmark_logo {
+  height: 100%;
+  width: 20px;
+  padding: 8px 0;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div.becnchmark_logo div.logo {
+  background-color: #6BBB24;
+  border: none;
+  border-radius: 3px;
+  height: 19px;
+  width: 100%;
+  padding: 0 4px;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div.becnchmark_logo div.logo i.fa-chevron-left {
+  color: #FFF;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div#bench_mark_name {
+  margin-left: 2px;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div#bench_mark_name h2.name {
+  color: #FFF;
+  font-size: 19px;
+  font-family: Gotham-Rounded-Light;
+  margin: 8px 5px 8px 0;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_accounts_container {
+  float: right;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_accounts_container div.group_accounts {
+  display: inline-block;
+  vertical-align: middle;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_accounts_container div.dropdown a.benchmark_accounts_username_link {
+  text-decoration: none;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_accounts_container div.dropdown a.benchmark_accounts_username_link span.accounts_name {
+  color: #FFF;
+  font-family: Gotham-Rounded-Light;
+  font-size: 14px;
+  margin-right: 5px;
+  transition: all 0.3s ease-out;
+  position: relative;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_accounts_container div.dropdown a.benchmark_accounts_username_link span.accounts_name i.fa-chevron-down {
+  color: #6BBB24;
+  font-size: 9px;
+  position: absolute;
+  right: -17px;
+  top: 5px;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_accounts_container div.dropdown a.benchmark_accounts_username_link span.accounts_name:hover {
+  color: #6BBB24;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_accounts_container div.dropdown div.dropdown-menu {
+  background-color: #272822;
+  border-radius: 0%;
+  padding: 0px 0;
+  top: 45px;
+  left: -15px;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_accounts_container div.dropdown div.dropdown-menu a {
+  color: #FFF;
+  display: block;
+  font-family: Gotham-Rounded-Light;
+  margin-bottom: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  padding: 5px;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_accounts_container div.dropdown div.dropdown-menu a:hover {
+  background-color: #6BBB24;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_accounts_container div.dropdown div.dropdown-menu a:last-child {
+  margin-bottom: 0;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_accounts_container div.dropdown div.user_image_container {
+  background-color: #6BBB24;
+  border-radius: 50%;
+  height: 36px;
+  margin-left: 5px;
+  overflow: hidden;
+  padding-top: 5px;
+  text-align: center;
+  width: 36px;
+}
+div#main_navigation div#benchmark_navigation div.benchmark_accounts_container div.dropdown div.user_image_container i.fa-user {
+  color: #D6FFB3;
+  font-size: 33px;
+}
+.wrapper {
+  display: block;
+  background-color: #CCCCCC;
+  margin: 0px 0px 0px;
+  padding: 75px 112px;
+  width: 100%;
+}
+.wrapper .content_wrapper {
+  display: table;
+  margin: 0px auto;
+  width: 1055px;
+}
+.wrapper .content_wrapper > .contents {
+  background-color: #FFF;
+  display: table-cell;
+  vertical-align: top;
+  width: 280px;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard {
+  padding: 0px;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content > div {
+  display: block;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user {
+  padding: 40px 0px 30px;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_img {
+  display: block;
+  height: 112px;
+  margin: 0px auto 11px;
+  width: 112px;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .username {
+  color: #272822;
+  display: block;
+  font: 20px/26px Gotham-Rounded-Book;
+  text-align: center;
+  margin: 0px auto;
+  width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator {
+  margin: 30px 0px 0px;
+  text-align: center;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .fa,
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper {
+  display: inline-block;
+  height: 46px;
+  text-align: left;
+  vertical-align: middle;
+  width: 46px;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .fa {
+  background-color: #6BBB24;
+  border-radius: 100%;
+  color: #FFF;
+  font-size: 28px;
+  padding: 9px 0px 0px;
+  text-align: center;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper {
+  height: auto;
+  margin: 0px 0px 0px 15px;
+  width: 180px;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper .user_exp,
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper .user_progress_bar {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper .user_exp .user_level,
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper .user_progress_bar .user_level,
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper .user_exp .user_experience,
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper .user_progress_bar .user_experience {
+  margin: 0px;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper .user_exp .user_level,
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper .user_progress_bar .user_level {
+  color: #272822;
+  font: 16px/22px Gotham-Rounded-Bold;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper .user_exp .user_experience,
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper .user_progress_bar .user_experience {
+  color: #728BE8;
+  font: 12px/18px Gotham-Rounded-Light;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper .user_progress_bar {
+  background-color: #DEE5FF;
+  margin: 5px 0px 0px;
+  width: 100%;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .dashboard_user .user_progress_indicator .progress_bar_wrapper .user_progress_bar .progress_bar {
+  background-color: #6BBB24;
+  height: 16px;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .sponsored_wrapper {
+  padding: 30px 15px 0px;
+  position: relative;
+  text-align: center;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .sponsored_wrapper:before {
+  content: '';
+  background-color: #F8F8F8;
+  height: 2px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .sponsored_wrapper h5 {
+  color: #5E5E5E;
+  font: 16px/22px Gotham-Rounded-Book;
+  margin: 0px auto 20px;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content .sponsored_wrapper img {
+  object-fit: cover;
+  max-width: 100%;
+  width: auto;
+}
+.wrapper .content_wrapper > .contents.user_progress_dashboard .dashboard_content.fixed_this_sidebar {
+  position: fixed;
+  left: inherit;
+  right: inherit;
+  width: inherit;
+  top: 61px;
+  background-color: #FFF;
+  height: 100%;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard {
+  background-color: #CCCCCC;
+  padding: 0px 0px 0px 35px;
+  width: 775px;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges {
+  background-color: #FFF;
+  padding: 30px 40px;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details h4 {
+  color: #5E5E5E;
+  margin: 0px 0px 17px;
+  font: 18px/24px Gotham-Rounded-Book;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul {
+  display: block;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 20px 0px 0px;
+  vertical-align: top;
+  width: 300px;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li .items_data {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li .items_data > div {
+  background-color: #C2EAF7;
+  display: table-cell;
+  width: 60px;
+  transition: background-color 0.4s ease-out;
+  -webkit-transition: background-color 0.4s ease-out;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li .items_data > div.icon_holder {
+  position: relative;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li .items_data > div.icon_holder img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 0px auto;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li .items_data > div.item_info_holder {
+  background-color: #E7F9FF;
+  padding: 10px 15px;
+  width: 240px;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li .items_data > div.item_info_holder h5 {
+  color: #5E5E5E;
+  font: bold 18px/24px Gotham-Rounded-Book;
+  margin: 0px 0px 7px;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li .items_data > div.item_info_holder p {
+  color: #272822;
+  margin: 0px;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li .items_data:hover > div {
+  background-color: #83c5da;
+  transition: background-color 0.4s ease-out;
+  -webkit-transition: background-color 0.4s ease-out;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li .items_data:hover > div.item_info_holder {
+  background-color: #c9e8f3;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li:first-child,
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li:nth-child(2) {
+  height: 175px;
+  margin: 0px;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li:nth-child(even) {
+  margin-left: 20px;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li:nth-child(5),
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li:nth-child(6) {
+  height: 116px;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li:nth-child(9),
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges .details .items_details ul > li:last-child {
+  height: 112px;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges.top {
+  margin: 0px 0px 35px;
+}
+.wrapper .content_wrapper > .contents.user_challenges_dashboard .dashboard_user_challenges .challenges.top .details .items_details ul > li {
+  height: 115px;
+}
+div#benchmark_teamplay_modal div.modal-dialog {
+  margin-top: 10%;
+  width: 452px;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content {
+  border-radius: 0%;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-header {
+  border-bottom: 0px;
+  padding: 30px 15px 0 15px;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-header h3#lets_get_started_text {
+  font-family: Gotham-Rounded-Bold;
+  text-align: center;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-body {
+  padding: 15px 40px 20px 40px;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-body p {
+  font-size: 16px;
+  font-family: Gotham-Rounded-Light;
+  text-align: center;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-footer {
+  background-color: #E7F9FF;
+  border-top: 0px;
+  padding: 35px 35px 20px 35px;
+  text-align: center;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-footer a#btn_invite_friends {
+  border: 1px solid #0B8CC1;
+  background-color: #FFFFFF;
+  color: #0B8CC1;
+  line-height: 36px;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-footer #lets_play_btn {
+  background-color: #6BBB24;
+  color: #FFF;
+  margin-left: 0;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-footer a#lets_play_btn_facebook {
+  background-color: #3B5998;
+  color: #FFF;
+  margin-left: 0;
+  display: none;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-footer p#facebook_login{
+  display: none;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-footer #dont_show_checkbox_container {
+  text-align: left;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-footer #dont_show_checkbox_container label {
+  cursor: pointer;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-footer #dont_show_checkbox_container label input {
+  background-color: transparent;
+  margin-top: 0;
+  vertical-align: middle;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-footer #dont_show_checkbox_container label span.do_not_show_this_text {
+  font-family: Gotham-Rounded-Light;
+  color: #696969;
+  font-size: 15px;
+  vertical-align: middle;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-footer .modal_btn {
+  display: block;
+  font-family: Gotham-Rounded-Medium;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 47px;
+}
+div#benchmark_teamplay_modal div.modal-dialog div.modal-content div.modal-footer .modal_btn:last-child {
+  margin-bottom: 0;
+}
+
+/*                               */
+
+div#facebook_user_info div.modal-dialog {
+  margin-top: 10%;
+  width: 452px;
+}
+div#facebook_user_info div.modal-dialog div.modal-content {
+  border-radius: 0%;
+}
+div#facebook_user_info div.modal-dialog div.modal-content div.modal-header {
+  border-bottom: 0px;
+  padding: 30px 15px 0 15px;
+}
+div#facebook_user_info div.modal-dialog div.modal-content div.modal-header h3#your_info {
+  font-family: Gotham-Rounded-Bold;
+  text-align: center;
+}
+div#facebook_user_info div.modal-dialog div.modal-content div.modal-body {
+  padding: 15px 40px 20px 40px;
+}
+div#facebook_user_info div.modal-dialog div.modal-content div.modal-body p {
+  font-size: 16px;
+  font-family: Gotham-Rounded-Light;
+  text-align: center;
+}
+div#facebook_user_info div.modal-dialog div.modal-content div.modal-footer {
+  background-color: #E7F9FF;
+  border-top: 0px;
+  padding: 35px 35px 20px 35px;
+  text-align: center;
+}
+div#facebook_user_info div.modal-dialog div.modal-content div.modal-footer a#btn_invite_friends {
+  border: 1px solid #0B8CC1;
+  background-color: #FFFFFF;
+  color: #0B8CC1;
+  line-height: 36px;
+}
+div#facebook_user_info div.modal-dialog div.modal-content div.modal-footer #lets_play_btn {
+  background-color: #6BBB24;
+  color: #FFF;
+  margin-left: 0;
+}
+
+div#facebook_user_info div.modal-dialog div.modal-content div.modal-footer #dont_show_checkbox_container {
+  text-align: left;
+}
+div#facebook_user_info div.modal-dialog div.modal-content div.modal-footer #dont_show_checkbox_container label {
+  cursor: pointer;
+}
+div#facebook_user_info div.modal-dialog div.modal-content div.modal-footer #dont_show_checkbox_container label input {
+  background-color: transparent;
+  margin-top: 0;
+  vertical-align: middle;
+}
+div#facebook_user_info div.modal-dialog div.modal-content div.modal-footer #dont_show_checkbox_container label span.do_not_show_this_text {
+  font-family: Gotham-Rounded-Light;
+  color: #696969;
+  font-size: 15px;
+  vertical-align: middle;
+}
+div#facebook_user_info div.modal-dialog div.modal-content div.modal-footer .modal_btn {
+  display: block;
+  font-family: Gotham-Rounded-Medium;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 47px;
+}
+div#facebook_user_info div.modal-dialog div.modal-content div.modal-footer .modal_btn:last-child {
+  margin-bottom: 0;
+}
+
+td{
+  border-top: none !important;
+}
+ td input{
+   width: 100%;
+   height: 40px;
+   text-align: center;
+ }

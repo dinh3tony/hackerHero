@@ -1,0 +1,238 @@
+.hh-tbl *{
+    font-family: Gotham-Rounded-Light;
+}
+
+.hh-tbl{
+    width:995px;
+}
+
+.hh-tbl td{
+    vertical-align: middle;
+}
+
+h2{
+    font-family: Gotham-Rounded-Bold;
+    padding-left:25px;
+    padding-top:15px;
+    text-align: left;
+}
+
+.hh-tbl th{
+    font-family: Gotham-Rounded-Bold;
+}
+
+.hh-tbl{
+    display:inline-block;
+    background-color: white;
+    border-top:1px solid #006792;
+    text-align: center;
+    padding-top:20px;
+
+}
+
+tbody tr:nth-child(odd){
+    background-color: #DCF4FC;
+}
+
+th{
+    font-size:14px;
+}
+
+tr{
+    height:32px;
+}
+
+td{
+    vertical-align: middle;
+    font-size:14px;
+    height:20px;
+}
+
+#pnts-bkdwn{
+    width:435px;
+    margin:0px 25px;
+}
+
+#pnts-bkdwn td:nth-child(1){
+    width:150px;
+}
+
+#pnts-bkdwn td:nth-child(2){
+    width:150px;
+}
+
+#pnts-bkdwn td:nth-child(3){
+    width:250px;
+}
+
+#allies-tbl{
+    margin-left:70px;
+    margin-bottom:65px;
+}
+#allies-tbl td{
+    height:40px;
+}
+
+#allies-tbl .tbl-usr-name{
+    text-align: left;
+}
+
+#allies-tbl td:nth-child(1){
+    width:40px;
+}
+
+#allies-tbl td:nth-child(2){
+    width:130px;
+}
+
+#allies-tbl td:nth-child(3){
+    width:120px;
+}
+#allies-tbl td:nth-child(4){
+    width:230px;
+}
+
+#th-frnd{
+    text-align: left;
+}
+
+.urs-tbl{
+    height:30px;
+    margin:0px 10px;
+    border-radius:50%;
+}
+
+.allies h2{
+    margin-left:70px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.allies{
+    width:45%;
+}
+
+.levels{
+    width:45%;
+}
+
+.levels h2{
+    margin-left:85px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+#lvls-tbl{
+    margin-left:85px;
+    width:485px;
+}
+
+#lvls-tbl td{
+    height:40px;
+}
+
+#lvls-tbl td:nth-child(1){
+    width:125px;
+}
+
+#lvls-tbl td:nth-child(2){
+    width:235px;
+}
+
+#lvls-tbl td:nth-child(3){
+    width:125px;
+}
+
+.lnd-bdg-img{
+    text-align:right;
+}
+
+.lnd-name{
+    text-align:left;
+    padding-left:10px;
+}
+
+.friends-tbl td:nth-child(1){
+    width:65px;
+}
+
+.friends-tbl td:nth-child(2){
+    width:140px;
+    text-align: left;
+}
+
+.friends-tbl td:nth-child(3){
+    width:125px;
+}
+
+.friends-tbl td:nth-child(4){
+    width:200px;
+}
+
+.friends-tbl td:nth-child(5){
+    width:100px;
+}
+
+.friends-tbl td:nth-child(6){
+    width:325px;
+}
+
+.followers-tbl td:nth-child(1){
+
+}
+
+.followers-tbl td:nth-child(2){
+    width:140px;
+    text-align: left;
+}
+
+.followers-tbl td:nth-child(3){
+    width:125px;
+}
+
+.followers-tbl td:nth-child(4){
+    width:200px;
+}
+
+.followers-tbl td:nth-child(5){
+    width:100px;
+}
+
+.followers-tbl td:nth-child(6){
+    width:325px;
+}
+
+.followers-tbl td:nth-child(7){
+    width:325px;
+}
+
+td .ply-tbl-btn-holder{
+    margin-left:-100px;
+    width:425px;
+}
+
+.add-frnd-btn{
+    background-color: #60B221;
+}
+
+.like-frnd-btn{
+    background-color: #425a91;
+}
+
+.fllw-frnd-btn{
+    background-color: #65afdc;
+}
+
+.show-more-btn{
+    width:175px;
+    height:30px;
+    margin:15px;
+    color:#0B81B9;
+    background-color:white;
+    border:1px solid #0B81B9;
+    font-size: 14px;
+}
+
+#tbl-username{
+    font-family:Gotham-Rounded-Bold; 
+}

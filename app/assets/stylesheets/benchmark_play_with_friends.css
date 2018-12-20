@@ -1,0 +1,444 @@
+body {
+  background: #CCCCCC;
+}
+body #main_navigation div#benchmark_navigation {
+  background-color: #272822;
+  height: 61px;
+  padding: 14px 55px;
+  width: 100%;
+}
+body #main_navigation div#benchmark_navigation div.group_nav_contents {
+  height: 100%;
+}
+body #main_navigation div#benchmark_navigation div.benchmark_logo_container {
+  float: left;
+}
+body #main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div.group_logo {
+  display: inline-block;
+  vertical-align: top;
+}
+body #main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div.becnchmark_logo {
+  height: 100%;
+  width: 20px;
+  padding: 8px 0;
+}
+body #main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div.becnchmark_logo div.logo {
+  background-color: #6BBB24;
+  border: none;
+  border-radius: 3px;
+  height: 19px;
+  width: 100%;
+  padding: 0 4px;
+}
+body #main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div.becnchmark_logo div.logo i.fa-chevron-left {
+  color: #FFF;
+}
+body #main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div#bench_mark_name {
+  margin-left: 2px;
+}
+body #main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div#bench_mark_name h2.name {
+  color: #FFF;
+  font-size: 19px;
+  font-family: Gotham-Rounded-Light;
+  margin: 8px 5px 8px 0;
+}
+body #main_navigation div#benchmark_navigation div#benchmark_accounts {
+  float: right;
+}
+body #main_navigation div#benchmark_navigation div#benchmark_accounts div.group_accounts {
+  display: inline-block;
+  vertical-align: middle;
+}
+body #main_navigation div#benchmark_navigation div#benchmark_accounts a#benchmark_accounts_username_link {
+  text-decoration: none;
+}
+body #main_navigation div#benchmark_navigation div#benchmark_accounts a#benchmark_accounts_username_link span.accounts_name {
+  color: #FFF;
+  font-family: Gotham-Rounded-Light;
+  font-size: 14px;
+  position: relative;
+}
+body #main_navigation div#benchmark_navigation div#benchmark_accounts a#benchmark_accounts_username_link span.accounts_name i.fa-chevron-down {
+  color: #6BBB24;
+  font-size: 9px;
+  margin-left: 5px;
+  position: absolute;
+  right: -12px;
+  top: 5px;
+}
+body #main_navigation div#benchmark_navigation div#benchmark_accounts a#benchmark_accounts_image_link div.user_image_container {
+  background-color: #6BBB24;
+  border-radius: 50%;
+  height: 36px;
+  margin-left: 21px;
+  overflow: hidden;
+  padding-top: 5px;
+  text-align: center;
+  width: 36px;
+}
+body #main_navigation div#benchmark_navigation div#benchmark_accounts a#benchmark_accounts_image_link div.user_image_container i.fa-user {
+  color: #D6FFB3;
+  font-size: 33px;
+}
+body #main_header {
+  height: 60px;
+  width: 100%;
+  background: #272822;
+}
+body #wrapper {
+  overflow: hidden;
+}
+body #wrapper .set_item_row {
+  display: inline-block;
+  vertical-align: top;
+}
+body #wrapper .container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+  width: 75%;
+}
+body #wrapper .container .app_content {
+  width: 785px;
+  display: inline-block;
+  vertical-align: top;
+}
+body #wrapper .container .app_content .code_answer_form {
+  background: #fff;
+}
+body #wrapper .container .app_content .code_answer_form .app_header ul.header_list {
+  margin-bottom: 0px;
+  background: #0B8CC1;
+}
+body #wrapper .container .app_content .code_answer_form .app_header ul.header_list * {
+  color: #fff;
+}
+body #wrapper .container .app_content .code_answer_form .app_header ul.header_list li {
+  font-family: Gotham-Rounded-Light;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px 28px;
+  border-right: 1px solid #3CA3CD;
+}
+body #wrapper .container .app_content .code_answer_form .app_header ul.header_list li .fa {
+  font-size: 26px;
+  line-height: 21px;
+  margin-right: 2px;
+}
+body #wrapper .container .app_content .code_answer_form .app_header ul.header_list li:last-child,
+body #wrapper .container .app_content .code_answer_form .app_header ul.header_list li:nth-last-child(2) {
+  border-right: 0px solid #3CA3CD;
+}
+body #wrapper .container .app_content .code_answer_form .app_header ul.header_list li > div {
+  display: inline-block;
+  vertical-align: top;
+}
+body #wrapper .container .app_content .code_answer_form .app_header ul.header_list li.status_bar_item .status_bar_container {
+  width: 60px;
+  height: 10px;
+  background: #fff;
+  border: 1px solid #fff;
+  margin-top: 6px;
+}
+body #wrapper .container .app_content .code_answer_form .app_header ul.header_list li.status_bar_item .status_bar_container .bar {
+  width: 70%;
+  height: 100%;
+  background: #6BBB24;
+}
+body #wrapper .container .app_content .code_answer_form .app_header ul.header_list li.status_bar_item .question_container span {
+  vertical-align: top;
+  display: inline-block;
+}
+body #wrapper .container .app_content .code_answer_form .app_header ul.header_list li.timer_item {
+  background: #006792;
+  padding: 23px 28px 17px;
+}
+body #wrapper .container .app_content .code_answer_form .app_header ul.header_list li.timer_item .timer_container {
+  width: 85px;
+}
+body #wrapper .container .app_content .code_answer_form .app_header ul.header_list li.timer_item .timer_container span#timer_text {
+  font-family: Gotham-Rounded-Medium;
+  font-size: 34px;
+  line-height: 15px;
+  width: 90px;
+}
+body #wrapper .container .app_content .code_answer_form .app_title_container {
+  background: #E7F9FF;
+  padding: 19px 28px;
+}
+body #wrapper .container .app_content .code_answer_form .app_title_container .points_container {
+  text-align: left;
+}
+body #wrapper .container .app_content .code_answer_form .app_title_container .points_container span {
+  background: #6BBB24;
+  color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: top;
+  font-family: Gotham-Rounded-Medium;
+  padding: 1px 10px;
+  margin-right: 5px;
+}
+body #wrapper .container .app_content .code_answer_form .app_title_container .points_container p {
+  margin-top: 2px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 0px;
+  font-family: Gotham-Rounded-Medium;
+  width: calc(100% - 65px);
+}
+body #wrapper .container .app_content .code_answer_form .codes_container {
+  width: 100%;
+  padding: 29px;
+}
+body #wrapper .container .app_content .code_answer_form .codes_container .mockup_container {
+  margin-bottom: 25px;
+  width: 100%;
+}
+body #wrapper .container .app_content .code_answer_form .codes_container .mockup_container img {
+  width: 100%;
+}
+body #wrapper .container .app_content .code_answer_form .codes_container .instructions_container {
+  margin-bottom: 40px;
+  text-align: left;
+}
+body #wrapper .container .app_content .code_answer_form .codes_container .instructions_container span.instruction_heading {
+  font-family: Gotham-Rounded-Bold;
+  font-size: 16px;
+}
+body #wrapper .container .app_content .code_answer_form .codes_container .instructions_container ul.instructions_container {
+  padding-left: 27px;
+}
+body #wrapper .container .app_content .code_answer_form .codes_container .instructions_container ul.instructions_container li.instruction_lists p {
+  font-family: Gotham-Rounded-Light;
+  font-size: 16px;
+  margin: 0;
+}
+body #wrapper .container .app_content .code_answer_form .codes_container .btn_container {
+  text-align: right;
+}
+body #wrapper .container .app_content .code_answer_form .codes_container .btn_container .content .run_code_btn {
+  font-family: Gotham-Rounded-Medium;
+  color: #0B8CC1;
+  border: 1px solid #0B8CC1;
+  padding: 11px 26px;
+  font-size: 16px;
+  margin-right: 7px;
+}
+body #wrapper .container .app_content .code_answer_form .codes_container .btn_container .content #submit_code_btn {
+  font-size: 16px;
+  padding: 11px 46px;
+  background: #6BBB24;
+  color: #fff;
+  font-family: Gotham-Rounded-Medium;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container {
+  padding: 27px;
+  border-top: 1px solid #EDEDED;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list {
+  margin-bottom: 0px;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #DCDCDC;
+  border-radius: 6px;
+  position: relative;
+  width: 47%;
+  text-align: left;
+  margin-bottom: 21px;
+  margin-right: 30px;
+  cursor: pointer;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  overflow: hidden;
+  /* ...and now for the proper property */
+  transition: .5s;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item:nth-last-child(2),
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item:last-child {
+  margin-bottom: 0px;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item:nth-last-child(3),
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item:last-child {
+  margin-right: 0px;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item:last-child .answer_content > div.right_container {
+  padding: 11px 18px 6px 56px;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item.disabled {
+  pointer-events: none;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item:hover {
+  border: 1px solid #0B8CC1;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  /* ...and now for the proper property */
+  transition: .5s;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item:hover .answer_content > div.left_container {
+  border-right: 1px solid #0B8CC1;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  /* ...and now for the proper property */
+  transition: .5s;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item.is_correct {
+  border: 1px solid #6BBB24;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item.is_correct .answer_content > div.left_container {
+  border-right: 1px solid #6BBB24;
+  background: #6BBB24;
+  color: #fff;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item.is_error {
+  border: 1px solid #ED6161;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item.is_error .answer_content > div.left_container {
+  border-right: 1px solid #ED6161;
+  background: #ED6161;
+  color: #fff;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item .answer_content {
+  overflow: hidden;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item .answer_content > div {
+  display: inline-block;
+  vertical-align: top;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item .answer_content > div p {
+  margin-bottom: 0px;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item .answer_content > div span {
+  font-family: Gotham-Rounded-Medium;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item .answer_content > div.left_container {
+  border-right: 1px solid #DCDCDC;
+  position: absolute;
+  top: 0;
+  font-size: 24px;
+  padding: 7px 12px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item .answer_content > div.right_container {
+  padding: 13px 18px;
+  padding-left: 56px;
+  width: 100%;
+  overflow: hidden;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item .answer_content > div.right_container p {
+  font-size: 16px;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item .answer_content > div.right_container textarea {
+  outline: none;
+  width: 100%;
+  border: none;
+  resize: none;
+  height: 26px;
+  font-size: 16px;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item .answer_content > div.right_container .proceed_btn {
+  position: absolute;
+  top: 0;
+  border-left: 1px solid #DCDCDC;
+  padding: 14px 12px;
+  right: -90px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item .answer_content > div.right_container textarea:focus ~ .proceed_btn {
+  background: #0B8CC1;
+  position: absolute;
+  right: 0px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #fff;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.answer_list li.answer_item .answer_content > div.right_container:hover .proceed_btn {
+  position: absolute;
+  right: 0px;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.to_do_list li {
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  border-radius: 5px;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.to_do_list li:nth-child(odd) {
+  background: #E7F9FF;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.to_do_list li.is_correct_answer .fa-check-circle {
+  color: #6bbb24;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.to_do_list li .fa-check-circle {
+  color: #D4D4D4;
+  font-size: 25px;
+  position: absolute;
+  right: 10px;
+}
+body #wrapper .container .app_content .code_answer_form .answer_container ul.to_do_list li p {
+  display: inline-block;
+  font-family: Gotham-Rounded-Light;
+  font-size: 16px;
+  margin-bottom: 0px;
+  width: calc(100% - 70px);
+}
+body #wrapper .container .app_content .code_answer_form .app_footer {
+  padding: 23px 27px;
+  background: #E7F9FF;
+}
+body #wrapper .container .app_content .code_answer_form .app_footer .left_container,
+body #wrapper .container .app_content .code_answer_form .app_footer .right_container {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+body #wrapper .container .app_content .code_answer_form .app_footer .left_container p,
+body #wrapper .container .app_content .code_answer_form .app_footer .right_container p {
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 19px;
+  vertical-align: top;
+}
+body #wrapper .container .app_content .code_answer_form .app_footer .left_container .next_level_text,
+body #wrapper .container .app_content .code_answer_form .app_footer .right_container .next_level_text {
+  font-family: Gotham-Rounded-Medium;
+  color: #0B8CC1;
+}
+body #wrapper .container .app_content .code_answer_form .app_footer .left_container .incorrect_answer_message,
+body #wrapper .container .app_content .code_answer_form .app_footer .right_container .incorrect_answer_message {
+  color: #ED6161;
+  font-family: Gotham-Rounded-Medium;
+}
+body #wrapper .container .app_content .code_answer_form .app_footer .left_container {
+  text-align: left;
+}
+body #wrapper .container .app_content .code_answer_form .app_footer .left_container .skip_question_btn {
+  color: #B7B7B7;
+}
+body #wrapper .container .app_content .code_answer_form .app_footer .left_container .skip_question_btn .fa {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 3px;
+}
+body #wrapper .container .app_content .code_answer_form .app_footer .left_container .skip_question_btn p {
+  display: inline-block;
+  vertical-align: top;
+}

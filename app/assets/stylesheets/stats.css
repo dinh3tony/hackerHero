@@ -1,0 +1,301 @@
+p,
+li {
+  color: #5E5E5E;
+  font: 14px/20px Gotham-Rounded-Light;
+}
+#main_navigation div#benchmark_navigation {
+  background-color: #272822;
+  height: 61px;
+  padding: 14px 55px;
+  width: 100%;
+}
+#main_navigation div#benchmark_navigation div.group_nav_contents {
+  height: 100%;
+}
+#main_navigation div#benchmark_navigation div.benchmark_logo_container {
+  float: left;
+}
+#main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div.group_logo {
+  display: inline-block;
+  vertical-align: top;
+}
+#main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div.becnchmark_logo {
+  height: 100%;
+  width: 20px;
+  padding: 8px 0;
+}
+#main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div.becnchmark_logo div.logo {
+  background-color: #6BBB24;
+  border: none;
+  border-radius: 3px;
+  height: 19px;
+  width: 100%;
+  padding: 0 4px;
+}
+#main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div.becnchmark_logo div.logo i.fa-chevron-left {
+  color: #FFF;
+}
+#main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div#bench_mark_name {
+  margin-left: 2px;
+}
+#main_navigation div#benchmark_navigation div.benchmark_logo_container a#benchmark_logo_link div#bench_mark_name h2.name {
+  color: #FFF;
+  font-size: 19px;
+  font-family: Gotham-Rounded-Light;
+  margin: 8px 5px 8px 0;
+}
+#main_navigation div#benchmark_navigation div#benchmark_accounts {
+  float: right;
+}
+#main_navigation div#benchmark_navigation div#benchmark_accounts div.group_accounts {
+  display: inline-block;
+  vertical-align: middle;
+}
+#main_navigation div#benchmark_navigation div#benchmark_accounts a#benchmark_accounts_username_link {
+  text-decoration: none;
+}
+#main_navigation div#benchmark_navigation div#benchmark_accounts a#benchmark_accounts_username_link span.accounts_name {
+  color: #FFF;
+  font-family: Gotham-Rounded-Light;
+  font-size: 14px;
+  position: relative;
+}
+#main_navigation div#benchmark_navigation div#benchmark_accounts a#benchmark_accounts_username_link span.accounts_name i.fa-chevron-down {
+  color: #6BBB24;
+  font-size: 9px;
+  margin-left: 5px;
+  position: absolute;
+  right: -12px;
+  top: 5px;
+}
+#main_navigation div#benchmark_navigation div#benchmark_accounts a#benchmark_accounts_image_link div.user_image_container {
+  background-color: #6BBB24;
+  border-radius: 50%;
+  height: 36px;
+  margin-left: 21px;
+  overflow: hidden;
+  padding-top: 5px;
+  text-align: center;
+  width: 36px;
+}
+#main_navigation div#benchmark_navigation div#benchmark_accounts a#benchmark_accounts_image_link div.user_image_container i.fa-user {
+  color: #D6FFB3;
+  font-size: 33px;
+}
+.wrapper {
+  background-color: #272822;
+}
+.wrapper .content_wrapper {
+  display: table;
+  margin: 0px auto;
+  width: 100%;
+}
+.wrapper .content_wrapper .contents {
+  background-color: #CCCCCC;
+  display: table-cell;
+  vertical-align: top;
+  width: 813px;
+}
+.wrapper .content_wrapper .contents.statistics_dashboard {
+  padding: 80px;
+}
+.wrapper .content_wrapper .contents.statistics_dashboard > div {
+  background-color: #FFF;
+  margin: 30px 0px 0px;
+  padding: 20px;
+}
+.wrapper .content_wrapper .contents.statistics_dashboard > div h4 {
+  color: #5E5E5E;
+  font: 20px/26px Gotham-Rounded-Bold;
+  margin: 0px 0px 10px;
+}
+.wrapper .content_wrapper .contents.statistics_dashboard > div .results_holder ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper .content_wrapper .contents.statistics_dashboard > div .results_holder ul li {
+  display: inline-block;
+  padding: 5px;
+  vertical-align: top;
+  width: 32.9%;
+}
+.wrapper .content_wrapper .contents.statistics_dashboard > div .results_holder ul li .result {
+  background-color: #E7F9FF;
+  padding: 4px 12px;
+}
+.wrapper .content_wrapper .contents.statistics_dashboard > div .results_holder ul li .result h5 {
+  font: bold 17px/23px Gotham-Rounded-Book;
+  margin: 0px 0px 5px;
+}
+.wrapper .content_wrapper .contents.statistics_dashboard > div .results_holder ul li .result .points_holder {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.wrapper .content_wrapper .contents.statistics_dashboard > div .results_holder ul li .result .points_holder .points_n {
+  background-color: #6BBB24;
+  border-radius: 20px;
+  color: #FFF;
+  font: bold 14px/20px Gotham-Rounded-Book;
+  padding: 3px 7px;
+  text-align: center;
+  width: 58px;
+}
+.wrapper .content_wrapper .contents.statistics_dashboard > div .results_holder ul li .result .points_holder p:not(.points_n) {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.wrapper .content_wrapper .contents.statistics_dashboard > div:first-child {
+  margin: 0px;
+}
+@media screen and (max-width: 1480px) {
+  .wrapper .content_wrapper .contents.statistics_dashboard {
+    padding: 50px;
+  }
+}
+.wrapper .content_wrapper .contents.teams_dashboard {
+  background-color: #FFF;
+  position: relative;
+  width: 555px;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div {
+  display: inline-block;
+  padding: 50px 60px;
+  vertical-align: top;
+  width: 50%;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div .team_overall_points {
+  background-color: #E7F9FF;
+  border-radius: 4px;
+  margin: 0px 0px 30px;
+  padding: 15px 0px 0px;
+  text-align: center;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div .team_overall_points img {
+  display: block;
+  height: 100px;
+  margin: 0px auto;
+  object-fit: contain;
+  width: 100px;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div .team_overall_points h3 {
+  color: #5E5E5E;
+  display: block;
+  font: 20px/26px Gotham-Rounded-Bold;
+  margin: 20px auto;
+  width: 90%;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div .team_overall_points p {
+  background-color: #66C1DF;
+  border-radius: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: #FFF;
+  font: 26px/32px Gotham-Rounded-Bold;
+  margin: 0px;
+  padding: 7px 5px;
+  text-align: center;
+  width: 100%;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div .team_points_breakdown ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div .team_points_breakdown ul li {
+  display: block;
+  padding: 10px 0px;
+  position: relative;
+  width: 100%;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div .team_points_breakdown ul li .member_info img,
+.wrapper .content_wrapper .contents.teams_dashboard .team > div .team_points_breakdown ul li .member_info .member_name {
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div .team_points_breakdown ul li .member_info img {
+  height: 38px;
+  margin: 0px 10px 0px 0px;
+  width: 38px;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div .team_points_breakdown ul li .member_info .member_name {
+  color: #272822;
+  font: bold 15px/21px Gotham-Rounded-Book;
+  margin: 0px;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div .team_points_breakdown ul li .member_point_holder .member_pts {
+  color: #272822;
+  font: bold 15px/21px Gotham-Rounded-Book;
+  margin: 0px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div .team_points_breakdown ul li:first-child {
+  padding: 0px;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div .team_points_breakdown ul li:nth-child(2) {
+  padding: 13px 0px 0px;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div a.invite_friends_btn {
+  background-color: #0B8CC1;
+  border-radius: 4px;
+  color: #FFF;
+  display: block;
+  font: 14px/20px Gotham-Rounded-Light;
+  margin: 20px 0px 0px;
+  padding: 8px 10px;
+  text-decoration: none !important;
+  text-align: center;
+  width: 95%;
+  transition: opacity .4s;
+  -webkit-transition: opacity .4s;
+}
+.wrapper .content_wrapper .contents.teams_dashboard .team > div a.invite_friends_btn:hover {
+  opacity: .7;
+  transition: opacity .4s;
+  -webkit-transition: opacity .4s;
+}
+.wrapper .content_wrapper .contents.teams_dashboard:before {
+  background-color: #E1E1E1;
+  content: '';
+  display: block;
+  height: 100%;
+  margin: 0px auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 2px;
+}
+.wrapper .content_wrapper .contents.teams_dashboard:after {
+  background-color: #66C1DF;
+  border-radius: 4px;
+  content: 'VS';
+  color: #FFF;
+  display: block;
+  font: bold 14px/20px Gotham-Rounded-Book;
+  height: 38px;
+  padding: 9px 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  text-align: center;
+  top: 10%;
+  width: 38px;
+}
+@media screen and (max-width: 1480px) {
+  .wrapper .content_wrapper .contents.teams_dashboard .team > div {
+    padding: 20px 30px;
+  }
+}
+.bx_shadow {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3) !important;
+}

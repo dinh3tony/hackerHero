@@ -1,0 +1,162 @@
+.header{
+    height:60px;
+    background-color: #272822;
+    color:white;
+    text-align: left;
+    width:100vw;
+}
+
+@media only screen and (max-width: 1280px) {
+    .header{
+      width:1280px;
+    }
+  }
+
+.header div{
+    display: inline-block;
+
+}
+
+.header p,img{
+    display:inline-block;
+}
+
+.logo{
+    height:60px;
+    width:79.49%;
+}
+
+.usermenu{
+    height:60px;
+    vertical-align: top;
+    text-align: right;
+    width:19.49%;
+    cursor: pointer;
+    display:inline-block;
+}
+
+.usermenu p{
+    vertical-align: top;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+.logo-img{
+    height:50px;
+    margin-right:50px;
+    margin-left:10px;
+    margin-top:5px;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.user-img-menu{
+    width: 40px;
+    border-radius: 50%;
+    margin-right:40px;
+    margin-top:10px;
+}
+
+.logo button{
+    background-color:#272822;
+    border:none;
+    color:white;
+    font-style: italic;
+    font-size:18px;
+    width: 150px;
+    height: 60px;
+}
+
+.nav-active{
+    font-style: normal !important;
+    text-transform:uppercase !important;
+    color:#60B223 !important;
+    border-bottom:3px solid #60B223 !important;
+}
+
+#nav-ply-num{
+    color:white ;
+    background-color:#0B81B9 ;
+    border-radius:10px ;
+    padding:5px ;
+    font-family: Gotham-Rounded-Bold;
+    font-style: normal;
+    font-size:12px;
+}
+
+.fa-angle-down{
+    margin-left:-20px;
+    margin-right:10px;
+    margin-top:20px;
+}
+
+.usermenu p{
+    font-family: Gotham-Rounded-Light;
+}
+
+.menu{
+    display:none;
+    position: relative;
+    border-left: 3px solid #0077B6;
+    color:black;
+    background-color:rgba(255, 255, 255, 0.9);
+    width:225px;
+    padding:10px;
+    font-family: Gotham-Rounded-Light;
+    font-size:14px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .menu{
+      position:absolute;
+      left:1020px;
+    }
+  }
+
+#menu-usrnme{
+    font-family: Gotham-Rounded-Bold;
+    font-size:18px;
+}
+
+.menu-img-holder, .menu-usrnme-holder{
+    display:inline-block;
+}
+
+.menu-img-holder{
+    width:50px;
+}
+
+.menu-usrnme-holder{
+    width:170px;
+    padding-top:10px;
+}
+
+.menu-usr-pic{
+    width:50px;
+    border-radius:50%;
+}
+
+.menu-items a{
+    display:block;
+    margin: 15px 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-items a:hover{
+    color:blue;
+}
+
+.header .menu{
+    display: none;
+    position: absolute;
+    top:60px;
+    right:0px;
+    border-left: 3px solid #0077B6;
+    color:black;
+    background-color:rgba(255, 255, 255, 0.9);
+    width:250px;
+    padding:10px;
+    font-family: Gotham-Rounded-Light;
+    font-size:14px;
+}

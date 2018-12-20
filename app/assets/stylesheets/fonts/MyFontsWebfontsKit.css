@@ -1,0 +1,130 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3092815, 2015-09-16T23:36:53-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ProximaNovaA-Bold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-bold/
+ * 
+ * Webfont: ProximaNovaA-Extrabld by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-extrabld/
+ * 
+ * Webfont: ProximaNovaA-Light by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-light/
+ * 
+ * Webfont: ProximaNovaA-Regular by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-regular/
+ * 
+ * Webfont: ProximaNovaA-RegularIt by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-regular-it/
+ * 
+ * Webfont: ProximaNovaA-Semibold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-semibold/
+ * 
+ * Webfont: ProximaNovaS-Bold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-bold/
+ * 
+ * Webfont: ProximaNovaS-Extrabld by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-extrabld/
+ * 
+ * Webfont: ProximaNovaS-Light by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-light/
+ * 
+ * Webfont: ProximaNovaS-Regular by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-regular/
+ * 
+ * Webfont: ProximaNovaS-RegularIt by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-regular-it/
+ * 
+ * Webfont: ProximaNovaS-Semibold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-semibold/
+ * 
+ * Webfont: ProximaNova-Bold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+ * 
+ * Webfont: ProximaNova-Extrabld by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/extrabld/
+ * 
+ * Webfont: ProximaNova-Light by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+ * 
+ * Webfont: ProximaNova-Regular by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+ * 
+ * Webfont: ProximaNova-RegularIt by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
+ * 
+ * Webfont: ProximaNova-Semibold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3092815
+ * Licensed pageviews: 1,000,000
+ * webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+// @import url("//hello.myfonts.net/count/2f314f");
+
+  
+@font-face {font-family: 'ProximaNovaA-Bold';src: url('webfonts/2F314F_0_0.eot');src: url('webfonts/2F314F_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_0_0.woff2') format('woff2'),url('webfonts/2F314F_0_0.woff') format('woff'),url('webfonts/2F314F_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNovaA-Extrabld';src: url('webfonts/2F314F_1_0.eot');src: url('webfonts/2F314F_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_1_0.woff2') format('woff2'),url('webfonts/2F314F_1_0.woff') format('woff'),url('webfonts/2F314F_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNovaA-Light';src: url('webfonts/2F314F_2_0.eot');src: url('webfonts/2F314F_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_2_0.woff2') format('woff2'),url('webfonts/2F314F_2_0.woff') format('woff'),url('webfonts/2F314F_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNovaA-Regular';src: url('webfonts/2F314F_3_0.eot');src: url('webfonts/2F314F_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_3_0.woff2') format('woff2'),url('webfonts/2F314F_3_0.woff') format('woff'),url('webfonts/2F314F_3_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNovaA-RegularIt';src: url('webfonts/2F314F_4_0.eot');src: url('webfonts/2F314F_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_4_0.woff2') format('woff2'),url('webfonts/2F314F_4_0.woff') format('woff'),url('webfonts/2F314F_4_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNovaA-Semibold';src: url('webfonts/2F314F_5_0.eot');src: url('webfonts/2F314F_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_5_0.woff2') format('woff2'),url('webfonts/2F314F_5_0.woff') format('woff'),url('webfonts/2F314F_5_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNova-Bold';src: url('webfonts/2F314F_6_0.eot');src: url('webfonts/2F314F_6_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_6_0.woff2') format('woff2'),url('webfonts/2F314F_6_0.woff') format('woff'),url('webfonts/2F314F_6_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNovaS-Extrabld';src: url('webfonts/2F314F_7_0.eot');src: url('webfonts/2F314F_7_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_7_0.woff2') format('woff2'),url('webfonts/2F314F_7_0.woff') format('woff'),url('webfonts/2F314F_7_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNovaS-Light';src: url('webfonts/2F314F_8_0.eot');src: url('webfonts/2F314F_8_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_8_0.woff2') format('woff2'),url('webfonts/2F314F_8_0.woff') format('woff'),url('webfonts/2F314F_8_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNovaS-Regular';src: url('webfonts/2F314F_9_0.eot');src: url('webfonts/2F314F_9_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_9_0.woff2') format('woff2'),url('webfonts/2F314F_9_0.woff') format('woff'),url('webfonts/2F314F_9_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNovaS-RegularIt';src: url('webfonts/2F314F_A_0.eot');src: url('webfonts/2F314F_A_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_A_0.woff2') format('woff2'),url('webfonts/2F314F_A_0.woff') format('woff'),url('webfonts/2F314F_A_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNovaS-Semibold';src: url('webfonts/2F314F_B_0.eot');src: url('webfonts/2F314F_B_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_B_0.woff2') format('woff2'),url('webfonts/2F314F_B_0.woff') format('woff'),url('webfonts/2F314F_B_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNova-Bold';src: url('webfonts/2F314F_C_0.eot');src: url('webfonts/2F314F_C_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_C_0.woff2') format('woff2'),url('webfonts/2F314F_C_0.woff') format('woff'),url('webfonts/2F314F_C_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNova-Extrabld';src: url('webfonts/2F314F_D_0.eot');src: url('webfonts/2F314F_D_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_D_0.woff2') format('woff2'),url('webfonts/2F314F_D_0.woff') format('woff'),url('webfonts/2F314F_D_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNova-Light';src: url('webfonts/2F314F_E_0.eot');src: url('webfonts/2F314F_E_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_E_0.woff2') format('woff2'),url('webfonts/2F314F_E_0.woff') format('woff'),url('webfonts/2F314F_E_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNova-Regular';src: url('webfonts/2F314F_F_0.eot');src: url('webfonts/2F314F_F_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_F_0.woff2') format('woff2'),url('webfonts/2F314F_F_0.woff') format('woff'),url('webfonts/2F314F_F_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNova-RegularIt';src: url('webfonts/2F314F_10_0.eot');src: url('webfonts/2F314F_10_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_10_0.woff2') format('woff2'),url('webfonts/2F314F_10_0.woff') format('woff'),url('webfonts/2F314F_10_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNova-Semibold';src: url('webfonts/2F314F_11_0.eot');src: url('webfonts/2F314F_11_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F314F_11_0.woff2') format('woff2'),url('webfonts/2F314F_11_0.woff') format('woff'),url('webfonts/2F314F_11_0.ttf') format('truetype');}
+ 

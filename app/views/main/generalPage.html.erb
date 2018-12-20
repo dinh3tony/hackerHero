@@ -1,0 +1,351 @@
+	<link rel="stylesheet" href="/assets/fonts/MyFontsWebfontsKit.css">
+	<link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="/assets/vendor/animate/animate.css">
+	<!-- <link rel="stylesheet" href="../css/vendor/font-awesome/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="/assets/vendor/font-awesome/font-awesome-animation.css">
+
+	<link rel="stylesheet" href="/assets/header.css">
+	<link rel="stylesheet" href="/assets/global.css">
+	<link rel="stylesheet" href="/assets/play_with_friends_main_dashboard.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="/assets/vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="/assets/vendor/wow/wow.min.js"></script>
+	<script src="/assets/vendor/underscore/underscore.min.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="/assets/custom/play_with_friends_main.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
+	<script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$("#lets_play_btn").click(function () {
+				$("#lets_play_btn").hide();
+				$("#lets_play_btn_facebook").css("display", "block");
+				$("#facebook_login").css("display", "block");
+				return false
+			});
+			
+			$('.menu').css('display', 'none')
+
+			// $('#lets_play_btn_facebook').click(function(){
+			// 	$('modal').modal('hide')
+			// })
+
+			$('.usermenu').click(function () {
+                if($('.menu').css('display') == 'none'){
+                    $('.menu').css('display', 'inline-block');
+                } else if($('.menu').css('display') == 'block'){
+                    $('.menu').css('display', 'none');
+                }
+            });
+			
+		});
+		
+
+	</script>
+
+</head>
+
+<body>
+	<div id="main_navigation">
+		<div class="main header">
+			<div class="logo">
+				<img class="logo-img" src="/assets/hrz-logo.png">
+				<button>Games</button>
+				<button class="nav-active">Players <span id="nav-ply-num">1234</span></button>
+				<button>Competitions</button>
+				<button>Companies</button>
+			</div>
+			<div class="usermenu">
+				<p>Demy</p>
+				<i class="fas fa-angle-down"></i>
+				<img class="user-img-menu" src="/assets/user.png">
+			</div>
+			<div class="menu">
+				<div class="menu-img-holder">
+					<img class="menu-usr-pic" src="/assets/user.png">
+				</div>
+				<div class="menu-usrnme-holder">
+					<p id="menu-usrnme">Demy Balanza</p>
+					<p>dbalanza@village88.com</p>
+				</div>
+				<div class="menu-items">
+					<a href="#">220 Followers</a>
+					<a href="#">220 Friends (6 requests)</a>
+					<hr>
+					<a href="#">Update Profile</a>
+					<a href="#">Logout</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="content_wrapper user_dashboard">
+			<div class="contents user_progress_dashboard">
+				<div class="dashboard_content">
+					<div class="dashboard_user">
+						<img class="user_img" src="/assets/user.png" alt="User Image">
+						<p class="username">Demy</p>
+						<div class="user_progress_indicator">
+							<i class="fa fa-star"></i>
+							<div class="progress_bar_wrapper">
+								<div class="user_exp">
+									<p class="user_level">Level 1</p>
+									<p class="user_experience">0/100 XP</p>
+								</div>
+								<div class="user_progress_bar">
+									<div class="progress_bar" style="width: 0%;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sponsored_wrapper">
+						<h5>Sponsored by</h5>
+						<img src="/assets/sponsors.jpg" alt="Sponsors">
+					</div>
+				</div>
+			</div>
+			<div class="contents user_challenges_dashboard">
+				<div class="dashboard_user_challenges">
+					<div class="challenges top">
+                            
+						<div class="details">
+							<h4>General (language&ndash;agnostic)</h4>
+							<div class="items_details">
+								<ul>
+									<li class="items">
+										<div class="items_data">
+											<div class="icon_holder">
+												<img class="user_img" src="/assets/icons/js.png" alt="Javascript">
+											</div>
+											<div class="item_info_holder">
+												<h5>General</h5>
+												<p>(fundamentals of variables, if/else statements, for loops, arrays, functions)</p>
+											</div>
+										</div>
+									</li>
+									<li class="items">
+										<div class="items_data">
+											<div class="icon_holder">
+												<img class="user_img" src="/assets/icons/js.png" alt="Javascript">
+											</div>
+											<!--
+												-->
+											<div class="item_info_holder">
+												<h5>Algorithms and Data Structures</h5>
+												<p>(Linked List, Hash Table, BST, Tries, Graphs, Sorting)</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="challenges bottom">
+						<div class="details">
+							<h4>Language Specific Knowledge</h4>
+							<div class="items_details">
+								<ul>
+									<li class="items">
+										<div class="items_data">
+											<div class="icon_holder">
+												<img class="user_img" src="/assets/icons/js.png" alt="Javascript">
+											</div>
+											<!--
+												-->
+											<div class="item_info_holder">
+												<h5>Javascript/Node Challenges</h5>
+												<p>How well do you understand Javascript? Testing of Javascript specific knowledge (e.g. callbacks, ES6,
+													etc).</p>
+											</div>
+										</div>
+									</li>
+									<li class="items">
+										<div class="items_data">
+											<div class="icon_holder">
+												<img class="user_img" src="/assets/icons/python.png" alt="Javascript">
+											</div>
+											<!--
+												-->
+											<div class="item_info_holder">
+												<h5>Python/Django Challenges</h5>
+												<p>How well do you understand Python? Testing of Python/Django specific knowledge (e.g. OOP, Django, etc).</p>
+											</div>
+										</div>
+									</li>
+									<li class="items">
+										<div class="items_data">
+											<div class="icon_holder">
+												<img class="user_img" src="/assets/icons/java.png" alt="Javascript">
+											</div>
+											<!--
+												-->
+											<div class="item_info_holder">
+												<h5>Java/Spring Challenges</h5>
+												<p>How well do you understand Java/Spring?</p>
+											</div>
+										</div>
+									</li>
+									<li class="items">
+										<div class="items_data">
+											<div class="icon_holder">
+												<img class="user_img" src="/assets/icons/dot_net.png" alt="Javascript">
+											</div>
+											<!--
+												-->
+											<div class="item_info_holder">
+												<h5>C#/.NET MVC Challenges</h5>
+												<p>How well do you understand C# and .NET MVC?</p>
+											</div>
+										</div>
+									</li>
+									<li class="items">
+										<div class="items_data">
+											<div class="icon_holder">
+												<img class="user_img" src="/assets/icons/ruby.png" alt="Javascript">
+											</div>
+											<!--
+												-->
+											<div class="item_info_holder">
+												<h5>Ruby on Rails Challenges</h5>
+												<p>How well do you understand Ruby and Rails?</p>
+											</div>
+										</div>
+									</li>
+									<li class="items">
+										<div class="items_data">
+											<div class="icon_holder">
+												<img class="user_img" src="/assets/icons/swift.png" alt="Javascript">
+											</div>
+											<!--
+												-->
+											<div class="item_info_holder">
+												<h5>iOS Challenges</h5>
+												<p>How well do you understand Objective C, Swift and iOS development?</p>
+											</div>
+										</div>
+									</li>
+									<li class="items">
+										<div class="items_data">
+											<div class="icon_holder">
+												<img class="user_img" src="/assets/icons/java.png" alt="Javascript">
+											</div>
+											<!--
+												-->
+											<div class="item_info_holder">
+												<h5>Java/Android Challenges</h5>
+												<p>How well do you understand Java/Android?</p>
+											</div>
+										</div>
+									</li>
+									<li class="items">
+										<div class="items_data">
+											<div class="icon_holder">
+												<img class="user_img" src="/assets/icons/react.png" alt="Javascript">
+											</div>
+											<!--
+												-->
+											<div class="item_info_holder">
+												<h5>React and Redux Challenges</h5>
+												<p>How well do you understand React and Redux?</p>
+											</div>
+										</div>
+									</li>
+									<li class="items">
+										<div class="items_data">
+											<div class="icon_holder">
+												<img class="user_img" src="/assets/icons/angular.png" alt="Javascript">
+											</div>
+											<!--
+												-->
+											<div class="item_info_holder">
+												<h5>Angular Challenges</h5>
+												<p>How well do you understand Angular?</p>
+											</div>
+										</div>
+									</li>
+									<li class="items">
+										<div class="items_data">
+											<div class="icon_holder">
+												<img class="user_img" src="/assets/icons/webfun.png" alt="Javascript">
+											</div>
+											<!--
+												-->
+											<div class="item_info_holder">
+												<h5>Front End Challenges</h5>
+												<p>How well do you understand HTML, CSS and Responsive Web Design?</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+	<!--Modals-->
+	<div class="modal fade" id="benchmark_teamplay_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<form action="" class="proceed_next_challege_form">
+					<div class="modal-header">
+						<h3 class="modal-title" id="lets_get_started_text">Lets Get Started!</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						</button>
+					</div>
+					<div class="modal-body">
+						<p> Each game, you play up to 20 minutes. The goal is to get as many points as possible to destroy a common
+							friendly enemy. Recruit friends to beat the friendly enemy together. User can skip up to 2 challenges.</p>
+					</div>
+					<div class="modal-footer">
+						<a href="javascript:void(0)" id="btn_invite_friends" class="btn modal_btn">Invite friends and play together</a>
+						<a href="" id="lets_play_btn" class="btn modal_btn">Let's Play</a>
+						<p id="facebook_login">Please login using Facebook first.</p>
+                        <a href="/users/auth/facebook" id="lets_play_btn_facebook" class="btn modal_btn" data-toggle="modal">Facebook Login</a>
+                        <p class="facebook_login">Disclaimer: HackerHero will access your Name, Email.</p>
+                        </div>
+
+						<div id="dont_show_checkbox_container" class="modal_btn">
+							<label>
+								<input type="checkbox" id="dont_show_this_again">
+								<span class="do_not_show_this_text">Do not show this again</span>
+							</label>
+						</div>
+				
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="facebook_user_info" tabindex="-1" role="dialog" aria-labelledby="facebookInfoLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<form action="" class="facebook_info_form">
+					<div class="modal-header">
+						<h3 class="modal-title" id="your_info">Your Information</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>Hi, User. Your temporary username is XYZ_123.</p>
+						<p>You can change your username upto 3 times.</p>
+						<p>Your current location is CA, USA.</p>
+					</div>
+					<div class="modal-footer">
+						<a href="" id="lets_play_btn" class="btn modal_btn">Start Coding!</a>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+    

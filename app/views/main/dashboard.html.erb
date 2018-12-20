@@ -1,0 +1,707 @@
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HackerHero - Players, Friends & Followers</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/assets/global.css">
+    <link rel="stylesheet" href="/assets/header.css">
+    <link rel="stylesheet" href="/assets/tables.css">
+    <link rel="stylesheet" href="/assets/gamesummary.css">
+    <link rel="stylesheet" href="/assets/dashboard.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".sidebarbut").click(function () {
+                if ($(this).attr('id') == 'side-players') {
+                    $(this).addClass("side-active");
+                    $('#side-followers').removeClass("side-active");
+                    $('#side-friends').removeClass("side-active");
+                    $('.friends').css('display', 'none');
+                    $('.followers').css('display', 'none');
+                    $('.players').css('display', 'inline-block');
+                };
+                if ($(this).attr('id') == 'side-followers') {
+                    $(this).addClass("side-active");
+                    $('#side-players').removeClass("side-active");
+                    $('#side-friends').removeClass("side-active");
+                    $('.friends').css('display', 'none');
+                    $('.players').css('display', 'none');
+                    $('.followers').css('display', 'inline-block');
+                };
+                if ($(this).attr('id') == 'side-friends') {
+                    $(this).addClass("side-active");
+                    $('#side-followers').removeClass("side-active");
+                    $('#side-players').removeClass("side-active");
+                    $('.players').css('display', 'none');
+                    $('.followers').css('display', 'none');
+                    $('.friends').css('display', 'inline-block');
+                };
+            });
+
+            $('tr').mouseenter(function () {
+                var id = $(this).attr('id');
+                $('#but-' + id).css('display', 'inline-block');
+                $('#lvl-' + id).css('display', 'none');
+            });
+
+            $('tr').mouseleave(function () {
+                var id = $(this).attr('id');
+                $('#but-' + id).css('display', 'none');
+                $('#lvl-' + id).css('display', 'inline-block');
+            });
+
+            $('.usermenu').click(function () {
+                if($('.menu').css('display') == 'none'){
+                    $('.menu').css('display', 'inline-block');
+                } else if($('.menu').css('display') == 'block'){
+                    $('.menu').css('display', 'none');
+                }
+            });
+
+            $('.show-more-btn').click(function(){
+                $('.show-more-btn').siblings('.hh-tbl').fadeOut('fast').fadeIn('fast');
+            })
+
+        });
+    </script>
+    <div class="a">
+        <div class="main header">
+            <div class="logo">
+                <img class="logo-img" src="/assets/hrz-logo.png">
+                <button onclick="location.href='generalPage.html'">Games</button>
+                <button onclick="location.href='dashboard.html'" class="nav-active">Players <span id="nav-ply-num">1,234</span></button>
+                <button>Competitions</button>
+                <button>Companies</button>
+            </div>
+            <div class="usermenu">
+                <p>Demy</p>
+                <i class="fas fa-angle-down"></i>
+                <img class="user-img-menu" src="/assets/user.png">
+            </div>
+            <div class="menu">
+                <div class="menu-img-holder">
+                    <img class="menu-usr-pic" src="/assets/user.png">
+                </div>
+                <div class="menu-usrnme-holder">
+                    <p id="menu-usrnme">Demy Balanza</p>
+                    <p>dbalanza@village88.com</p>
+                </div>
+                <div class="menu-items">
+                    <a href="#">220 Followers</a>
+                    <a href="#">220 Friends (6 requests)</a>
+                    <hr>
+                    <a href="#">Update Profile</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <button id="side-players" class="sidebarbut">Players <span id="sidebar-num">1,234</span></button>
+            <button id="side-friends" class="sidebarbut side-active">Friends <span id="sidebar-num">220</span> <span id="frnd-req">+7</span></button>
+            <button id="side-followers" class="sidebarbut">Followers <span id="sidebar-num">220</span></button>
+        </div>
+        <div class="players">
+            <div class="search sdw-tbl">
+                <i class="fas fa-search fa-2x"></i>
+                <input type="text" placeholder="Search Players">
+            </div>
+            <div class="sdw-tbl">
+                <h2>Players (1,234)</h2>
+                <table class="hh-tbl friends-tbl" CELLSPACING=0>
+                    <thead>
+                        <tr>
+                            <th>
+                                <!--Blank for user image-->
+                            </th>
+                            <th>Name</th>
+                            <th>Social Connections <i id="tbl-tltp" data-tippy="The total number of friends plus the number of followers the user has"
+                                    class="fas fa-question-circle"></i></th>
+                            <th>Location</th>
+                            <th>General Level</th>
+                            <th>Other Levels</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="1">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-1" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-1" class="fnd-btn-holder ply-tbl-btn-holder">
+                                    <button class="add-frnd-btn"><i class="fas fa-plus fa-2x"></i> Add Friend</button>
+                                    <button class="like-frnd-btn">Like</button>
+                                    <button class="fllw-frnd-btn">Follow</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="2">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-2" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-2" class="fnd-btn-holder ply-tbl-btn-holder">
+                                    <button class="add-frnd-btn"><i class="fas fa-plus fa-2x"></i> Add Friend</button>
+                                    <button class="like-frnd-btn">Like</button>
+                                    <button class="fllw-frnd-btn">Follow</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="3">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-3" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-3" class="fnd-btn-holder ply-tbl-btn-holder">
+                                    <button class="add-frnd-btn"><i class="fas fa-plus fa-2x"></i> Add Friend</button>
+                                    <button class="like-frnd-btn">Like</button>
+                                    <button class="fllw-frnd-btn">Follow</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="4">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-4" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-4" class="fnd-btn-holder ply-tbl-btn-holder">
+                                    <button class="add-frnd-btn"><i class="fas fa-plus fa-2x"></i> Add Friend</button>
+                                    <button class="like-frnd-btn">Like</button>
+                                    <button class="fllw-frnd-btn">Follow</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="5">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-5" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-5" class="fnd-btn-holder ply-tbl-btn-holder">
+                                    <button class="add-frnd-btn"><i class="fas fa-plus fa-2x"></i> Add Friend</button>
+                                    <button class="like-frnd-btn">Like</button>
+                                    <button class="fllw-frnd-btn">Follow</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="6">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-6" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-6" class="fnd-btn-holder ply-tbl-btn-holder">
+                                    <button class="add-frnd-btn"><i class="fas fa-plus fa-2x"></i> Add Friend</button>
+                                    <button class="like-frnd-btn">Like</button>
+                                    <button class="fllw-frnd-btn">Follow</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="show-more-btn">Show More</button>
+            </div>
+        </div>
+        <div class="friends">
+            <div class="sdw-tbl">
+                <h2>Friend Requests (6)</h2>
+                <table class="hh-tbl friends-tbl" CELLSPACING=0>
+                    <thead>
+                        <tr>
+                            <th>
+                                <!--Blank for user image-->
+                            </th>
+                            <th>Name</th>
+                            <th>Social Connections <i data-tippy="The total number of friends plus the number of followers the user has"
+                                    class="fas fa-question-circle"></i></th>
+                            <th>Location</th>
+                            <th>General Level</th>
+                            <th>Other Levels</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="7">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-7" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-7" class="fnd-btn-holder">
+                                    <button class="fnd-acpt"><i class="fas fa-plus fa-2x"></i> Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="8">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-8" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-8" class="fnd-btn-holder">
+                                    <button class="fnd-acpt"><i class="fas fa-plus fa-2x"></i> Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="9">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-9" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-9" class="fnd-btn-holder">
+                                    <button class="fnd-acpt"><i class="fas fa-plus fa-2x"></i> Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="10">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-10" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-10" class="fnd-btn-holder">
+                                    <button class="fnd-acpt"><i class="fas fa-plus fa-2x"></i> Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="11">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-11" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-11" class="fnd-btn-holder">
+                                    <button class="fnd-acpt"><i class="fas fa-plus fa-2x"></i> Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="12">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-12" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-12" class="fnd-btn-holder">
+                                    <button class="fnd-acpt"><i class="fas fa-plus fa-2x"></i> Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="search sdw-tbl">
+                <i class="fas fa-search fa-2x"></i>
+                <input type="text" placeholder="Search Friends">
+            </div>
+
+            <div class="sdw-tbl">
+                <h2>Friends (220)</h2>
+                <table class="hh-tbl friends-tbl mgn-btm" CELLSPACING=0>
+                    <thead>
+                        <tr>
+                            <th>
+                                <!--Blank for user image-->
+                            </th>
+                            <th>Name</th>
+                            <th>Social Connections <i data-tippy="The total number of friends plus the number of followers the user has"
+                                    class="fas fa-question-circle"></i></th>
+                            <th>Location</th>
+                            <th>General Level</th>
+                            <th>Other Levels</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="1">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-1" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-1" class="fnd-btn-holder">
+                                    <button class="fnd-acpt">Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="2">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-2" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-2" class="fnd-btn-holder">
+                                    <button class="fnd-acpt">Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="3">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-3" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-3" class="fnd-btn-holder">
+                                    <button class="fnd-acpt">Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="4">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-4" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-4" class="fnd-btn-holder">
+                                    <button class="fnd-acpt">Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="5">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-5" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-5" class="fnd-btn-holder">
+                                    <button class="fnd-acpt">Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="6">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-6" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-6" class="fnd-btn-holder">
+                                    <button class="fnd-acpt">Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="show-more-btn">Show More</button>
+            </div>
+        </div>
+
+        <div class="followers">
+            <div class="search sdw-tbl">
+                <i class="fas fa-search fa-2x"></i>
+                <input type="text" placeholder="Search Players">
+            </div>
+            <div class="sdw-tbl">
+                <h2>Followers (220)</h2>
+                <table class="hh-tbl followers-tbl" CELLSPACING=0>
+                    <thead>
+                        <tr>
+                            <th>
+                                <!--Blank for user image-->
+                            </th>
+                            <th>Name</th>
+                            <th>Social Connections <i data-tippy="The total number of friends plus the number of followers the user has"
+                                    class="fas fa-question-circle"></i></th>
+                            <th>Location</th>
+                            <th>General Level</th>
+                            <th>Other Levels</th>
+                            <th>Following Since</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="1">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-1" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-1" class="fnd-btn-holder">
+                                    <button class="fnd-acpt">Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                            <td>2 days ago</td>
+                        </tr>
+                        <tr id="2">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-2" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-2" class="fnd-btn-holder">
+                                    <button class="fnd-acpt">Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                            <td>2 days ago</td>
+                        </tr>
+                        <tr id="3">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-3" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-3" class="fnd-btn-holder">
+                                    <button class="fnd-acpt">Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                            <td>2 days ago</td>
+                        </tr>
+                        <tr id="4">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-4" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-4" class="fnd-btn-holder">
+                                    <button class="fnd-acpt">Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                            <td>2 days ago</td>
+                        </tr>
+                        <tr id="5">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-5" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-5" class="fnd-btn-holder">
+                                    <button class="fnd-acpt">Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                            <td>2 days ago</td>
+                        </tr>
+                        <tr id="6">
+                            <td><img class="user-img-menu" src="/assets/user.png"></td>
+                            <td>
+                                <p id="tbl-username">Xie Yan</p>
+                                <p id="tbl-realname">Bryan Gapuz</p>
+                            </td>
+                            <td>10</td>
+                            <td>San Jose, CA, USA</td>
+                            <td>LV 12</td>
+                            <td>
+                                <div id="lvl-6" class="lvl-holder">
+                                    <p>Data Structure(LV 9)</p>
+                                    <p>Django(LV 5)</p>
+                                </div>
+                                <div id="but-6" class="fnd-btn-holder">
+                                    <button class="fnd-acpt">Accept</button>
+                                    <button class="fnd-dcln">Decline</button>
+                                </div>
+                            </td>
+                            <td>2 days ago</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="show-more-btn">Show More</button>
+            </div>
+        </div>
+    </div>

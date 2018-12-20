@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  question_text: MyText
+  parent_question_id: 1
+  question_version_number: 1
+  problem_variation: 1
+
+two:
+  question_text: MyText
+  parent_question_id: 1
+  question_version_number: 1
+  problem_variation: 1
